@@ -1,11 +1,10 @@
 <?php
-
 namespace App\Controllers;
 class Connection extends BaseController
 {
     public function index(): string
     {
-        return view("login_form");
+        return view('templates/header').view("login_form").view('templates/footer');
     }
     public function attemptLogin() 
     {

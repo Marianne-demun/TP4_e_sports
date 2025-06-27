@@ -23,7 +23,7 @@ class utilisateurs extends Model
     protected $returnType       = 'array';
 
     protected $allowedFields = [
-    'id_utilisateurs',
+    
     'login_utilisateurs',
     ];
 
@@ -31,6 +31,6 @@ class utilisateurs extends Model
     protected bool $updateOnlyChanged = true;
 
     function getUtilisateursByMatricule($matricule) {
-        return $this->where($matricule)->limit(1);
+        return $this->where('login',$matricule)->findAll();
     }
 }
