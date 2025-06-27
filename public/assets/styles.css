@@ -1,14 +1,33 @@
-body
-{
-    background-image: url("arenetournoi.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+html,
+body {
+  height: 100%;
 }
 
-.container
-{
-     background-color:(black 0.5);
-     color: floralwhite;
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url("arenetournoi.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.header-outer {
+  display: flex;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: solid black;
+}
+
+.footer {
+  display: flex;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: solid black;
 }
